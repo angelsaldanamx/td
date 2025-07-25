@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos de la Demanda</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <h1>Detalles de la Demanda</h1>
+
+    <div class="contenedor-demanda">
+        <p><strong>ID de la Demanda:</strong> {{ demanda.id }}</p>
+        <p><strong>Nombre del Cliente:</strong> {{ demanda.cliente }}</p>
+        <p><strong>Producto Solicitado:</strong> {{ demanda.producto }}</p>
+        <p><strong>Cantidad:</strong> {{ demanda.cantidad }} unidades</p>
+        <p><strong>Fecha de Solicitud:</strong> {{ demanda.fecha_solicitud }}</p>
+        <p><strong>Estado:</strong> {{ demanda.estado }}</p>
+    </div>
+
+    <a href="/menu_principal">Volver al menú</a>
+</body>
+</html>

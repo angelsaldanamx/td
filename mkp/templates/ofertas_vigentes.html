@@ -1,0 +1,37 @@
+//yo xd
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ofertas Vigentes</title>
+</head>
+<body>
+    <h1>Ofertas Publicadas por el Productor</h1>
+
+    <p>
+        <a href="/buscar_demanda">Buscar Demanda</a> |
+        <a href="/registrar_oferta">Registrar Nueva Oferta</a>
+    </p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID Oferta</th>
+                <th>Fecha de Publicación</th>
+                <th>Fecha de Entrega</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for oferta in ofertas %}
+            <tr>
+                <td>{{ oferta.id_oferta }}</td>
+                <td>{{ oferta.fecha_publicacion }}</td>
+                <td>{{ oferta.fecha_entrega }}</td>
+                <td>{{ oferta.producto }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+//pau
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Ofertado</title>
+</head>
+<body>
+    <h2>Producto ofertado</h2>
+    <label for="sProductos">Selecciona un producto:</label>
+    <select id="sProductos" name="sProductos">
+        {% for producto in productos %}
+        <option value="{{producto}}">{{producto}}</option>
+        {% endfor %}
+    </select><br>
+    <label for="fecha">Fecha de entrega:</label>
+    <input type="date" id="fecha" name="fecha">
+
+</body>
+</html>
